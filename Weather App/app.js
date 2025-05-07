@@ -72,12 +72,10 @@ function displayWeather() {
   tempElement.innerHTML = `${weather.temperature.value}<span>°c</span>`;
   humidityElement.innerHTML = `<img class="humidity-icon" src="./extraicons/humidity.svg" alt="humidity">${weather.humidity}`;
 }
-
 // CELSIUS TO FAHRENHEIT CONVERSION
 function celsiusToFahrenheit(temp){
     return ((9/5) * temp) + 32;
 }
-
 // WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENET
 function toggleUnits(){
     if(weather.temperature.value === undefined){ 
